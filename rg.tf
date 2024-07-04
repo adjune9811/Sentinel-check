@@ -2,4 +2,9 @@
 resource "azurerm_resource_group" "tf-rg" {
   name     = "Terraform-RG"
   location = "East US"
+
+tags = {
+    environment = "production"
+    costcenter  = "IT"
+  }
 }
